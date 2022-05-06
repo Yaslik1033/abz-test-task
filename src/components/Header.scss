@@ -1,0 +1,19 @@
+header {
+  background-color: #ffffff;
+  height: 60px;
+
+  & .container {
+    height: 100%;
+  }
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  & .buttons a:not(:last-of-type) {
+    margin-right: 11px;
+  }
+}

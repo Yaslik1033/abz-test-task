@@ -1,0 +1,144 @@
+.sign-up {
+  padding: 140px 0 100px;
+
+  & .heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  width: 378px;
+  margin: 0 auto;
+
+  & .input-wrap {
+    width: 100%;
+    position: relative;
+  }
+
+  & .input-wrap:not(:first-child) {
+    margin-top: 50px;
+  }
+
+  & > .input-wrap:last-child {
+    box-shadow: #000 10px 10px;
+  }
+
+  & .input {
+    width: 100%;
+    height: 54px;
+    border: 1px solid #D0CFCF;
+    background: inherit;
+    box-sizing: border-box;
+    padding: 0 14px;
+    display: block;
+
+    &::placeholder {
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+  }
+}
+
+.sign-up-form .input::placeholder {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.input-wrap[data-name="phone"]::after {
+  content: "+38 (XXX) XXX - XX - XX";
+  position: absolute;
+  top: 108%;
+  left: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7E7E7E;
+}
+
+.positions {
+  margin-top: 43px;
+
+  & > p {
+    margin-bottom: 13px;
+  }
+}
+
+.radio-btn {
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.positions-list li:not(:first-child) {
+  margin-top: 6px;
+}
+
+.positions label {
+  display: flex;
+  align-items: center;
+}
+
+.photo-label {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin-top: 46px;
+
+  & .input-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    & .input {
+      width: .1px;
+      height: 0.1px;
+      opacity: 0;
+    }
+  }
+}
+
+.drag-n-drop--left {
+  width: 83px;
+  border: 1px solid #000;
+  justify-content: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.drag-n-drop--right {
+  color: #7E7E7E;
+  width: auto;
+  flex-grow: 1;
+  border: 1px solid #D0CFCF;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  padding-left: 14px;
+}
+
+.drag-n-drop--left,
+.drag-n-drop--right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-form .btn {
+  margin: 52px auto 0;
+}
+
+@media(max-width: 600px) {
+  .sign-up-form {
+    width: 100%;
+  }
+}

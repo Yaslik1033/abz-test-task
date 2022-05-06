@@ -1,0 +1,29 @@
+.banner {
+  background-image: url('../img/banner.png');
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+  color: #fff;
+  padding: 164px 0;
+
+  & > * {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+
+.banner__heading {
+  margin-bottom: 21px;
+}
+
+.banner__text {
+  margin-bottom: 32px;
+}
+
+@media(max-width: 600px) {
+  .banner {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
